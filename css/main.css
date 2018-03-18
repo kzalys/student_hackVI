@@ -1,69 +1,192 @@
+@font-face {
+    font-family: "Dodge";
+    src: url('../fonts/DODGE.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url('../fonts/BebasNeue Bold.otf') format("truetype");
+}
+
+/* Universal */
+
+/* Core */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 html {
-    background-color: #3F3365;
-    height: 100%;
-}
-
-.stars {
-    position: absolute;
-    z-index: -5;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300%;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     background-position: center;
-    background-repeat: repeat-y;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-#stars1 {
-    background-image: url("../img/stars1.png");
-}
-
-#stars2 {
-    background-image: url("../img/stars2.png");
-}
-
-#stars3 {
-    background-image: url("..//img/stars3.png");
-}
-
-.saturn {
-    position: absolute;
-    right: 10%;
-    top: 20%;
-    width: 40em;
-    height: 40em;
-}
-
-.fullHeight {
-    width: 100%;
+.foreground {
+    background-color: transparent;
+    background-image: url("../img/foreground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
-    background-color: violet;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-/* div.content {
-    line-height: 200px;
-    text-align: center;
-    vertical-align: text-bottom;
-} */
-
-/* .title {
-    display: inline-block;
-    vertical-align: text-bottom;
-    line-height: normal; 
-    color: white;
-    font-size: 6em;
-    font-family: 'Candal', sans-serif;
-} */
-
-.title {
-    left: 0;
-    line-height: 200px;
-    margin-top: -100px;
+section {
     position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* Venue Section */
+
+#venue {
+    position: absolute;
+    top: 100%;
+}
+
+#venueInformation {
+    background-color: #28315A;
+}
+
+/* Grids */
+
+.timerGrid, .venueGrid {
+    display: grid;
+}
+
+/* Timer */
+
+#days {
+    grid-area: d;
+}
+
+#hours {
+    grid-area: h;
+}
+
+#minutes {
+    grid-area: m;
+}
+
+#seconds {
+    grid-area: s;
+}
+
+/* Desktop */
+
+/* Timer */
+
+#timer {
     color: white;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "d h m s" "d h m s";
+    align-items: start;
+    list-style: none;
+    padding: 13% 10% 0 10%;
+    margin: 0;
+}
+
+.timerText {
+    font-family: Dodge;
+    font-size: 1em;
+    position: relative;
+    top: -1em;
+    padding: 0;
+    margin: 0;
+}
+
+.timerNumber {
+    font-family: Bebas;
     font-size: 6em;
-    font-family: 'Candal', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Title */
+
+#title {
+    position: relative;
+    top: 0;
+    font-family: "Dodge";
+    font-size: 6em;
+    width: 100%;
+    color: #DBDDDD;
+    padding: 7% 0;
+}
+
+/* Venue */
+
+.venueGrid {
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "i t";
+}
+
+#venuePicture {
+    background-image: url("../img/venue.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    grid-area: "i";
+}
+
+#venueInformation {
+    grid-area: "t";
+}
+
+#venueText {
+    height: 45%
+}
+
+#map {
+    width: 100%;
+    height: 51%;
+}
+
+/* Tablet */
+
+@media(max-width: 1024px) {
+    /* Timer */
+    #timer {
+        padding: 30% 10% 0 10%;
+        margin: 0;
+    }
+    /* Title */
+    #title {
+        font-size: 4em;
+        padding: 20% 0;
+    }
+    /* Venue image */
+}
+
+/* Phone */
+
+@media(max-width: 768px) {
+    /* Timer */
+    #timer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "d h" "d h" "m s" "m s";
+        padding: 20% 10% 0 10%;
+    }
+    /* Title */
+    #title {
+        font-size: 3em;
+        padding: 15% 0;
+    }
+    /* Venue */
+    .venueGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "i" "t";
+    }
 }
