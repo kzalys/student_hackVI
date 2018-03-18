@@ -1,33 +1,33 @@
-$(document).ready(function() {
-    resize();
-});
+// $(document).ready(function () {
+//     resize();
+// });
 
-$(window).resize(function() {
-    resize();
-})
+// $(window).resize(function () {
+//     resize();
+// })
 
 
-$(window).scroll(function() {
-    parallax();
-})
+// $(window).scroll(function () {
+//     parallax();
+// })
 
-function parallax() {
-    var wScroll = $(window).scrollTop();
+// function parallax() {
+//     var wScroll = $(window).scrollTop();
 
-    $('.parallax--quick').css('top', (wScroll * 0.5) + 'px');
-    $('.parallax--medium').css('top', (wScroll * 0.3) + 'px');
-    $('.parallax--slow').css('top', (wScroll * 0) + 'px');
-    console.log($('.parallax--slow').css(top));
-    
+//     $('.parallax--quick').css('top', (wScroll * 0.5) + 'px');
+//     $('.parallax--medium').css('top', (wScroll * 0.3) + 'px');
+//     $('.parallax--slow').css('top', (wScroll * 0) + 'px');
+//     console.log($('.parallax--slow').css(top));
 
-    // $('.title').css('top', (wScroll * 0.3) + 'px');
-}
 
-function resize() {
-    const ratioDelta =  ($(window).width() / $(window).height()) / (16 / 9);
-    console.log($(window).height());
-    parallax();
-}
+//     // $('.title').css('top', (wScroll * 0.3) + 'px');
+// }
+
+// function resize() {
+//     const ratioDelta = ($(window).width() / $(window).height()) / (16 / 9);
+//     console.log($(window).height());
+//     parallax();
+// }
 
 var countDownDate = new Date("Apr 26, 2018 09:00:00").getTime();
 var x = setInterval(function () {
@@ -55,13 +55,13 @@ var x = setInterval(function () {
 }, 1000);
 
 function initMap() {
-    var venue = {lat: 53.470350850357946, lng: -2.240422239629993};
+    var venue = { lat: 53.470350850357946, lng: -2.240422239629993 };
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 16,
-      center: venue
+        zoom: 16,
+        center: venue
     });
     var marker = new google.maps.Marker({
-      position: venue,
-      map: map
+        position: venue,
+        map: map
     });
-  }
+}
