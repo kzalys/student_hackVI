@@ -169,7 +169,7 @@ section {
 @media(max-width: 1024px) {
     /* Timer */
     #timer {
-        padding: 30% 10% 0 10%;
+        padding: 10% 10% 0 10%;
         margin: 0;
     }
     /* Title */
@@ -187,12 +187,20 @@ section {
     #timer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "d h" "d h" "m s" "m s";
-        padding: 20% 10% 0 10%;
+        padding: 10% 10% 0 10%;
+    }
+
+    .timerNumber {
+        font-size: 5em;
+    }
+
+    .timerText {
+        font-size: 1em;
     }
     /* Title */
     #title {
         font-size: 3em;
-        padding: 15% 0;
+        padding: 13% 0;
     }
     /* Venue */
     .venueGrid {

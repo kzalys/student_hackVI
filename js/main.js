@@ -1,6 +1,6 @@
-$(document).ready(function () {
-    // resize();
-});
+// $(document).ready(function () {
+//     // resize();
+// });
 
 // $(window).resize(function () {
 //     resize();
