@@ -41,30 +41,20 @@ function initMap() {
 
 // Parallax
 
-// $(document).ready(function () {
-//     // resize();
-// });
+$(window).scroll(function () {
+    parallax();
+})
 
-// $(window).resize(function () {
-//     resize();
-// })
+function parallax() {
+    var wScroll = $(window).scrollTop();
 
-
-// $(window).scroll(function () {
-//     parallax();
-// })
-
-// function parallax() {
-//     var wScroll = $(window).scrollTop();
-
-//     $('.parallax--quick').css('top', (wScroll * 0.5) + 'px');
-//     $('.parallax--medium').css('top', (wScroll * 0.3) + 'px');
-//     $('#hero').css('top', (wScroll * 0) + 'px');
-//     console.log($('.parallax--slow').css(top));
+    $('#hero').css('top', (wScroll * 0.5) + 'px');
+    $('#background').css('top', (wScroll * 0.7) + 'px');
+    // console.log($('.parallax--slow').css(top));
 
 
-//     // $('.title').css('top', (wScroll * 0.3) + 'px');
-// }
+    // $('.title').css('top', (wScroll * 0.3) + 'px');
+}
 
 // function resize() {
 //     const ratioDelta = ($(window).width() / $(window).height()) / (16 / 9);
