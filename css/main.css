@@ -46,6 +46,10 @@ section {
     min-width: 100%;
 }
 
+#hero {
+    position: absolute;
+}
+
 /* Venue Section */
 
 #venue {

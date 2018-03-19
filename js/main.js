@@ -16,7 +16,7 @@
 
 //     $('.parallax--quick').css('top', (wScroll * 0.5) + 'px');
 //     $('.parallax--medium').css('top', (wScroll * 0.3) + 'px');
-//     $('.parallax--slow').css('top', (wScroll * 0) + 'px');
+//     $('#hero').css('top', (wScroll * 0) + 'px');
 //     console.log($('.parallax--slow').css(top));
 
 
