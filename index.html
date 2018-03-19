@@ -9,10 +9,13 @@
 </head>
 
 <body>
-    <div id="background"></div>
+    <div id="background" class="fullscreen parallax--medium"></div>
+    <div id="stars" class="fullscreen parallax--slow"></div>
+    <div id="falcon" class="fullscreen parallax--fast"></div>
+    <div id="meteor" class="fullscreen parallax--medium"></div>
     <main id="main">
         <!-- Hero page -->
-        <section id="hero">
+        <section id="hero" class="parallax--fast">
             <ul id="timer" class="timerGrid">
                 <li id="days">
                     <p id="daysNumber" class="timerNumber">25</p>
@@ -31,9 +34,9 @@
                     <p class="timerText">Seconds</p>
                 </li>
             </ul>
-            <header id="title" class="parallax--slow">StudentHack VI</header>
+            <header id="title">StudentHack VI</header>
         </section>
-        <div class="foreground"></div>
+        <div id="foreground" class="fullscreen"></div>
         <!-- Venue page -->
         <section id="venue" class="venueGrid">
             <div id="venuePicture"></div>

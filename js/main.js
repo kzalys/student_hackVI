@@ -48,16 +48,20 @@ $(window).scroll(function () {
 function parallax() {
     var wScroll = $(window).scrollTop();
 
-    $('#hero').css('top', (wScroll * 0.5) + 'px');
-    $('#background').css('top', (wScroll * 0.7) + 'px');
-    // console.log($('.parallax--slow').css(top));
+    var fastDelta = 0.4;
+    var mediumDelta = 0.6;
+    var slowDelta = 0.8;
 
+    var meteorXRatio = 0.466;
+    var falconXRation = 2.145;
 
-    // $('.title').css('top', (wScroll * 0.3) + 'px');
+    $('.parallax--fast').css('top', (wScroll * fastDelta) + 'px');
+    $('.parallax--medium').css('top', (wScroll * mediumDelta) + 'px');
+    $('.parallax--slow').css('top', (wScroll * slowDelta) + 'px');
+
+    var falconLeft = $('#falcon').css('left');
+    var meteorLeft = $('#meteor').css('left');
+    
+    $('#falcon').css('left', falconLeft - (wScroll * fastDelta / falconXRation) + 'px');
+    $('#meteor').css('left', meteorLeft - (wScroll * mediumDelta / meteorXRatio) + 'px');
 }
-
-// function resize() {
-//     const ratioDelta = ($(window).width() / $(window).height()) / (16 / 9);
-//     console.log($(window).height());
-//     parallax();
-// }

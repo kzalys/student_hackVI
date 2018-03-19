@@ -17,10 +17,11 @@ html, body {
     padding: 0;
     text-align: center;
     overflow-x: hidden;
+    background-color: #2B263A;
 }
 
-#background {
-    background-image: url("../img/background.png");
+.fullscreen {
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,26 +32,30 @@ html, body {
     left: 0;
 }
 
-.foreground {
-    background-color: transparent;
+#background {
+    background-image: url("../img/planets.png");
+}
+
+#stars {
+    background-image: url("../img/stars.png");
+}
+
+#falcon {
+    background-image: url("../img/falcon.png");
+}
+
+#meteor {
+    background-image: url("../img/meteor.png");
+}
+
+#foreground {
     background-image: url("../img/foreground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 section {
     position: absolute;
     min-height: 100%;
     min-width: 100%;
-}
-
-#hero {
-    position: absolute;
 }
 
 /* Venue Section */
@@ -144,7 +149,6 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: red;
     grid-area: "i";
 }
 
