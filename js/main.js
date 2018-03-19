@@ -25,20 +25,6 @@ var x = setInterval(function () {
 
 }, 1000);
 
-// Map
-
-function initMap() {
-    var venue = { lat: 53.470350850357946, lng: -2.240422239629993 };
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
-        center: venue
-    });
-    var marker = new google.maps.Marker({
-        position: venue,
-        map: map
-    });
-}
-
 // Parallax
 
 $(window).scroll(function () {
@@ -46,6 +32,9 @@ $(window).scroll(function () {
 })
 
 function parallax() {
+    if ($(document).width() < 1024)
+        return;
+        
     var wScroll = $(window).scrollTop();
 
     var fastDelta = 0.4;
@@ -53,7 +42,7 @@ function parallax() {
     var slowDelta = 0.8;
 
     var meteorXRatio = 0.466;
-    var falconXRation = 2.145;
+    var falconXRatio = 2.145;
 
     $('.parallax--fast').css('top', (wScroll * fastDelta) + 'px');
     $('.parallax--medium').css('top', (wScroll * mediumDelta) + 'px');
@@ -62,6 +51,20 @@ function parallax() {
     var falconLeft = $('#falcon').css('left');
     var meteorLeft = $('#meteor').css('left');
     
-    $('#falcon').css('left', falconLeft - (wScroll * fastDelta / falconXRation) + 'px');
+    $('#falcon').css('left', falconLeft - (wScroll * fastDelta / falconXRatio) + 'px');
     $('#meteor').css('left', meteorLeft - (wScroll * mediumDelta / meteorXRatio) + 'px');
 }
+
+// // Map
+
+// function initMap() {
+//     var venue = { lat: 53.470350850357946, lng: -2.240422239629993 };
+//     var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 16,
+//         center: venue
+//     });
+//     var marker = new google.maps.Marker({
+//         position: venue,
+//         map: map
+//     });
+// }
