@@ -191,15 +191,15 @@ section {
     }
 
     .timerNumber {
-        font-size: 5em;
+        font-size: 4.5em;
     }
 
     .timerText {
-        font-size: 1em;
+        font-size: 0.7em;
     }
     /* Title */
     #title {
-        font-size: 3em;
+        font-size: 2em;
         padding: 13% 0;
     }
     /* Venue */
