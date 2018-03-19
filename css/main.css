@@ -16,16 +16,20 @@ html, body {
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow-x: hidden;
 }
 
-html {
+#background {
     background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    max-width: 100%;
-    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .foreground {
