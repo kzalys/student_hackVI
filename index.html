@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <div id="background" class="fullscreen parallax--medium"></div>
-    <div id="stars" class="fullscreen parallax--slow"></div>
-    <div id="falcon" class="fullscreen parallax--fast"></div>
-    <div id="meteor" class="fullscreen parallax--medium"></div>
+    <div id="background" class="fullscreen parallax--medium background"></div>
+    <div id="stars" class="fullscreen parallax--slow background"></div>
+    <div id="falcon" class="fullscreen parallax--fast background"></div>
+    <div id="meteor" class="fullscreen parallax--medium background"></div>
     <main id="main">
         <!-- Hero page -->
         <section id="hero" class="parallax--fast">
-            <ul id="timer" class="timerGrid">
+            <ul id="timer" class="timerGrid text">
                 <li id="days">
                     <p id="daysNumber" class="timerNumber">25</p>
                     <p class="timerText">Days</p>
@@ -34,16 +34,18 @@
                     <p class="timerText">Seconds</p>
                 </li>
             </ul>
-            <header id="title">StudentHack VI</header>
+            <header id="title" class="text">StudentHack VI</header>
+            <p id="eventInfo" class="text">MMU Business School, Manchester <br>
+                28 - 29 April 2018</p>
         </section>
-        <div id="foreground" class="fullscreen"></div>
+        <div id="foreground" class="fullscreen background"></div>
         <!-- Venue page -->
         <section id="venue" class="venueGrid">
-            <div id="venuePicture"></div>
-            <div id="venueInformation">
+            <!-- <div id="venuePicture"></div> -->
+            <!-- <div id="venueInformation">
                 <p id="venueText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laborum, consectetur magni expedita quisquam voluptatum odio vero autem ea adipisci sunt tempora eveniet, enim ex doloremque facere porro excepturi nam minus nostrum, hic saepe delectus? Illo laudantium alias, a animi sequi deleniti qui culpa, ratione dolorum facilis, quod recusandae distinctio.</p>
                 <div id="map">MMU Business School location</div>
-            </div>
+            </div> -->
         </section>
 
         <section id="footer">
@@ -52,7 +54,6 @@
     </main>
 </body>
 
-<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUXNOfuRSPD1Cq4veI_vQIU77vl9DgLpA&callback=initMap"/> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 

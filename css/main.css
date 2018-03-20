@@ -32,6 +32,10 @@ html, body {
     left: 0;
 }
 
+.background {
+    z-index: -1000;
+}
+
 #background {
     background-image: url("../img/planets.png");
 }
@@ -51,6 +55,7 @@ html, body {
 #foreground {
     background-image: url("../img/foreground.png");
     background-position: left;
+    z-index: 1000;
 }
 
 section {
@@ -59,15 +64,22 @@ section {
     min-width: 100%;
 }
 
+.text {
+    color: white;
+}
+
 /* Venue Section */
 
 #venue {
+    background-color: #28315A;
     position: absolute;
     top: 100%;
+    z-index: 1000;
 }
 
 #venueInformation {
     background-color: #28315A;
+    background-color: transparent;
 }
 
 /* Grids */
@@ -99,7 +111,6 @@ section {
 /* Timer */
 
 #timer {
-    color: white;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "d h m s" "d h m s";
     align-items: start;
@@ -132,8 +143,16 @@ section {
     font-family: "Dodge";
     font-size: 6em;
     width: 100%;
-    color: #DBDDDD;
-    padding: 7% 0;
+    padding: 7% 0 0 0;
+    z-index: 1000;
+}
+
+#eventInfo {
+    position: relative;
+    top: -0.5em;
+    font-family: "Bebas";
+    font-size: 2em;
+    z-index: 1000;
 }
 
 /* Venue */
@@ -171,6 +190,10 @@ section {
 /* Tablet */
 
 @media(max-width: 1024px) {
+    /* Core */
+    #foreground {
+        z-index: -1000;
+    }
     /* Timer */
     #timer {
         padding: 20% 10% 0 10%;
@@ -179,9 +202,13 @@ section {
     /* Title */
     #title {
         font-size: 4em;
-        padding: 10% 0;
+        padding: 10% 0 0 0;
     }
-    /* Venue image */
+
+    #eventInfo {
+        font-size: 1.3em;
+    }
+    
 }
 
 /* Phone */
@@ -204,7 +231,11 @@ section {
     /* Title */
     #title {
         font-size: 2em;
-        padding: 13% 0;
+        padding: 13% 0 0 0;
+    }
+
+    #eventInfo {
+        font-size: 1em;
     }
     /* Venue */
     .venueGrid {
