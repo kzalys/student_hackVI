@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <title>StudentHack VI</title>
-    <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-        <div id="background" class="fullscreen parallax--medium background"></div>
+    <div id="background" class="fullscreen parallax--medium background"></div>
     <div id="stars" class="fullscreen parallax--slow background"></div>
     <div id="falcon" class="fullscreen parallax--fast background"></div>
     <div id="meteor" class="fullscreen parallax--medium background"></div>
-    <div id="logo"></div>
-    
     <main id="main">
         <!-- Hero page -->
         <section id="hero" class="parallax--fast">
@@ -55,9 +42,4 @@
 
         </section>
     </main>
-</body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
-
-</html>
+    <div id="logo"></div>

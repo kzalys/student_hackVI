@@ -68,6 +68,16 @@ section {
     color: white;
 }
 
+#logo {
+    position: absolute;
+    background-size: cover;
+    top: 3em;
+    left: 3em;
+    height: 7em;
+    width: 7em;
+    background-image: url("../img/logo.png");
+}
+
 /* Venue Section */
 
 #venue {
@@ -209,6 +219,13 @@ section {
         font-size: 1.3em;
     }
     
+
+    #logo {
+        top: 2em;
+        left: 2em;
+        height: 5em;
+        width: 5em;
+    }
 }
 
 /* Phone */
@@ -241,5 +258,12 @@ section {
     .venueGrid {
         grid-template-columns: 1fr;
         grid-template-areas: "i" "t";
+    }
+
+    #logo {
+        top: 2em;
+        left: 2em;
+        height: 3em;
+        width: 3em;
     }
 }
