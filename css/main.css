@@ -95,7 +95,7 @@ section {
     grid-gap: 2em;
     position: absolute;
     right: 2.5em;
-    top: 2.8em;
+    bottom: 2em;
     height: 1.5em;
     width: 10.5em;
 }
@@ -104,8 +104,8 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1.7em;
-    width: 1.7em;
+    height: 2em;
+    width: 2em;
     background-size: cover;
     background-color: transparent;
 }
@@ -116,7 +116,7 @@ section {
 }
 
 #twitter {
-    width: 2em;
+    width: 2.5em;
     grid-area: t;
     background-image: url("../img/twitterLogo.png");
 }
