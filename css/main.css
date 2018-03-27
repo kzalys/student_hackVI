@@ -91,7 +91,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "f t g";
-    align-items: start;
+    align-items: center;
     grid-gap: 2em;
     position: absolute;
     right: 2.5em;
@@ -116,6 +116,7 @@ section {
 }
 
 #twitter {
+    left: -0.25em;
     width: 2.5em;
     grid-area: t;
     background-image: url("../img/twitterLogo.png");
@@ -252,6 +253,15 @@ section {
     #foreground {
         z-index: -1000;
     }
+
+    .footerLogos {
+        left: 0;
+        right: 0;
+        bottom: 0.7em;
+        margin: auto;
+        height: 50%;
+        width: 10.5em;
+    }
     /* Timer */
     #timer {
         padding: 20% 10% 0 10%;
@@ -274,6 +284,8 @@ section {
         height: 5em;
         width: 5em;
     }
+
+
 }
 
 /* Phone */
