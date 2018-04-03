@@ -108,6 +108,17 @@ section {
     z-index: 10000199999;
 }
 
+#ticketsBtn {
+    width: 9em;
+    height: 3.7em;
+    z-index: 100000000;
+    position: absolute;
+    right: 3em;
+    top: 3.65em;
+    background-image: url("../img/ticketsBtn.png");
+    background-size: cover;
+}
+
 #footer {
     position: absolute;
     top: 313%;
