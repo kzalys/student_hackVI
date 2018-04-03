@@ -273,8 +273,8 @@ section {
     position: relative;
     bottom: 0;
     margin: auto;
-    height: 22em;
-    width: 18em;
+    height: 370px;
+    width: 290px;
 }
 
 .faqQuestion:hover {
@@ -301,9 +301,10 @@ section {
     position: relative;
     padding-top: 1.8em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    font-size: 1.5em;
     line-height: 1em;
 }
 
@@ -313,7 +314,7 @@ section {
     font-style: bold;
     font-size: 1em;
     height: 100%;
-    line-height: 10em;
+    line-height: 14em;
     text-align: center;
     margin-left: 0.5em;
     margin-right: 0.5em;
