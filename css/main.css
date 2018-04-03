@@ -8,9 +8,19 @@
     src: url('../fonts/BebasNeue Bold.otf') format("truetype");
 }
 
+@font-face {
+    font-family: "Candal";
+    src: url('../fonts/Candal.ttf') format("truetype");
+}
+
 /* Universal */
 
 /* Core */
+
+#faq {
+    position: absolute;
+    top: 100%;
+}
 
 html, body {
     margin: 0;
@@ -32,8 +42,27 @@ html, body {
     left: 0;
 }
 
+#foreground {
+    height: 295%;
+}
+
+.faqBG {
+    position: absolute;
+    top: 100%;
+    z-index: 1000000;
+    height: 195%;
+}
+
 .background {
     z-index: -1000;
+}
+
+#faqStars {
+    background-image: url("../img/faqStars.png");
+}
+
+#faqMeteor {
+    background-image: url("../img/faqMeteor.png");
 }
 
 #background {
@@ -76,7 +105,7 @@ section {
     height: 5em;
     width: 5em;
     background-image: url("../img/logo.png");
-    z-index: 10000;
+    z-index: 10000199999;
 }
 
 #footer {
@@ -214,6 +243,94 @@ section {
     z-index: 1000;
 }
 
+/* FAQ */
+
+.faqGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    grid-row-gap: 5em;
+    z-index: 999999999;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 6em;
+    height: 210%;
+    width: 100%;
+}
+
+.faqQuestion {
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    height: 22em;
+    width: 18em;
+}
+
+.faqQuestion:hover {
+    box-shadow: 0 -10px 100px rgba(138, 138, 138, 0.3); 
+}
+
+.questionBG {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 2em 10em;
+    height: 98%;
+    width: 100%;
+    background-color: #231F30;
+}
+
+.questionIcon {
+    height: 1.7em;
+    color: white;
+    margin: auto;
+    position: relative;
+}
+
+.questionTitle {
+    position: relative;
+    padding-top: 1.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+.questionText {
+    padding-top: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    font-size: 1em;
+    height: 100%;
+    line-height: 10em;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    line-height: normal;
+}
+
+.cyanMarker {
+    background-color: #13C3D2
+}
+
+.redMarker {
+    background-color: #FC68AB
+}
+
+.orangeMarker {
+    background-color: #F49460
+}
+
 /* Venue */
 
 .venueGrid {
@@ -253,7 +370,6 @@ section {
     #foreground {
         z-index: -1000;
     }
-
     .footerLogos {
         left: 0;
         right: 0;
@@ -272,20 +388,15 @@ section {
         font-size: 4em;
         padding: 10% 0 0 0;
     }
-
     #eventInfo {
         font-size: 1.3em;
     }
-    
-
     #logo {
         top: 2em;
         left: 2em;
         height: 5em;
         width: 5em;
     }
-
-
 }
 
 /* Phone */
@@ -297,11 +408,9 @@ section {
         grid-template-areas: "d h" "d h" "m s" "m s";
         padding: 10% 10% 0 10%;
     }
-
     .timerNumber {
         font-size: 4.5em;
     }
-
     .timerText {
         font-size: 1em;
     }
@@ -310,7 +419,6 @@ section {
         font-size: 2em;
         padding: 13% 0 0 0;
     }
-
     #eventInfo {
         font-size: 1em;
     }
@@ -319,11 +427,13 @@ section {
         grid-template-columns: 1fr;
         grid-template-areas: "i" "t";
     }
-
     #logo {
         top: 1em;
         left: 1em;
         height: 3em;
         width: 3em;
+    }
+    .faqGrid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
