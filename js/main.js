@@ -27,15 +27,17 @@ var x = setInterval(function () {
 
 // Parallax
 
-$(window).scroll(function () {
+$('body').scroll(function () {
     parallax();
 })
 
 function parallax() {
+    console.log("heelo");
+    
     if ($(document).width() < 1024)
         return;
         
-    var wScroll = $(window).scrollTop();
+    var wScroll = $('body').scrollTop();
 
     var fastDelta = 0.4;
     var mediumDelta = 0.6;
