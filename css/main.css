@@ -323,12 +323,13 @@ span {
 
 #githubLogo {
     width: 23rem;
+    right: 2.5rem;
 }
 
 #bloomberg {
     width: 33rem;
     position: relative;
-    left: 5rem;
+    left: 2.5rem;
     top: -0.3rem;
 }
 
