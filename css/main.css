@@ -449,7 +449,7 @@ span {
     #logo {
         position: absolute;
         background-size: cover;
-        top: 35%;
+        top: 33%;
         left: 40%;
         height: 80px;
         width: 80px;
@@ -459,7 +459,7 @@ span {
     #ticketsBtn {
         width: 8.001rem !important;
         height: 5.43375rem !important;
-        top: 4rem !important;
+        top: 2.5rem !important;
         left: 0;
         margin: 0 auto;
         background-image: url('../img/ticketsBtn.png');
@@ -467,7 +467,7 @@ span {
     .secondaryBtn {
         width: 5.715rem;
         height: 3.88125rem;
-        top: 3.4rem !important;
+        top: 1.9rem !important;
     }
     #volunteerBtn {
         margin: 0 1rem 0 auto;
