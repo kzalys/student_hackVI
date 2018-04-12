@@ -96,15 +96,35 @@ section {
     background-image: url('../img/meteor.png');
 }
 
-#ticketsBtn {
+#redirectButtons * {
+    display: inline-block;
     position: relative;
-    width: 12.5rem;
-    height: 8.625rem;
-    margin: 0 auto;
     top: 5rem;
     background-size: cover;
-    background-image: url('../img/ticketsBtn.png');
     z-index: 100;
+}
+
+#ticketsBtn {
+    width: 12.7rem;
+    height: 8.625rem;
+    margin: 0 auto;
+    background-image: url('../img/ticketsBtn.png');
+}
+
+.secondaryBtn {
+    width: 9.525rem;
+    height: 6.46875rem;
+    top: 4.2rem !important;
+}
+
+#volunteerBtn {
+    margin: 0 5rem 0 auto;
+    background-image: url('../img/volunteer.png');
+}
+
+#mentorBtn {
+    margin: 0 auto 0 5rem;
+    background-image: url('../img/mentor.png');
 }
 
 /* Timer */
