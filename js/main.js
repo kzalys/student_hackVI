@@ -26,12 +26,24 @@ var x = setInterval(function () {
 }, 1000);
 
 if ($(window).width() <= 768)
-    $('#logo').css('left', ($(window).width() - 80) / 2);
+{
+    $('#logo').css('left', ($(window).width() - 60) / 2);
+    $('#logo').css('top', ($('#timer').height() - $('#logo').width()) / 2 + $('#timer').offset().top);
+}
 
 $(window).resize(function () {
-    if ($(window).width() > 768)
-        return;
-    $('#logo').css('left', ($(window).width() - 80) / 2);
+    if ($(window).width() <= 768) {
+        $('#logo').css('left', ($(window).width() - $('#logo').width()) / 2);
+        $('#logo').css('top', ($('#timer').height() - $('#logo').width()) / 2 + $('#timer').offset().top);
+    }
+    else if ($(window).width() <= 1024) {
+        $('#logo').css('left', '2rem');
+        $('#logo').css('top', '2rem');
+    }
+    else {
+        $('#logo').css('left', '3rem');
+        $('#logo').css('top', '3rem');
+    }
 })
 
 // Parallax

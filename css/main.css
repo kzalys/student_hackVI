@@ -451,8 +451,8 @@ span {
         background-size: cover;
         top: 35%;
         left: 40%;
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
     }
     /* Hero section */
     /* Redirect Buttons */
@@ -490,7 +490,7 @@ span {
     }
     /* Title */
     #title {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 10% 0 0 0;
     }
     #eventInfo {
