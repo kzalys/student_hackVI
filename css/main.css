@@ -478,10 +478,9 @@ span {
     /* Timer */
     #timer {
         position: relative;
-        top: -3rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "d h" "d h" "m s" "m s";
-        padding: 2% 10%;
+        padding: 0 10%;
     }
     .timerNumber {
         font-size: 4.5rem;
