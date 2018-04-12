@@ -176,12 +176,12 @@ section {
 
 #faq {
     top: -1px;
-    height: 200%;
+    height: auto;
     background-image: url('../img/faqBG.png');
     background-position-y: top;
     background-size: cover;
     z-index: 100;
-    margin-bottom: -3rem;
+    padding-bottom: 1rem;
 }
 
 #faqTitle {
@@ -279,9 +279,9 @@ span {
 /* Sponsors section */
 
 #sponsors {
-    top: -50;
     height: auto;
     width: 100%;
+    margin-top: -3.1rem;
     background-image: url('../img/sponsorsBG.png');
     background-size: cover;
 }
