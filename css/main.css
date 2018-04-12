@@ -449,37 +449,39 @@ span {
     #logo {
         position: absolute;
         background-size: cover;
-        top: 43%;
-        left: 43%;
-        height: 5rem;
-        width: 5rem;
+        top: 35%;
+        left: 40%;
+        height: 80px;
+        width: 80px;
     }
     /* Hero section */
     /* Redirect Buttons */
     #ticketsBtn {
-        width: 8.89rem !important;
-        height: 6.0375rem !important;
+        width: 8.001rem !important;
+        height: 5.43375rem !important;
         top: 4rem !important;
         left: 0;
         margin: 0 auto;
         background-image: url('../img/ticketsBtn.png');
     }
     .secondaryBtn {
-        width: 6.35rem;
-        height: 4.3125rem;
+        width: 5.715rem;
+        height: 3.88125rem;
         top: 3.4rem !important;
     }
     #volunteerBtn {
-        margin: 0 2rem 0 auto;
+        margin: 0 1rem 0 auto;
     }
     #mentorBtn {
-        margin: 0 auto 0 2rem;
+        margin: 0 auto 0 1rem;
     }
     /* Timer */
     #timer {
+        position: relative;
+        top: -3rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "d h" "d h" "m s" "m s";
-        padding: 2% 10% 0 10%;
+        padding: 0 10%;
     }
     .timerNumber {
         font-size: 4.5rem;
@@ -489,8 +491,8 @@ span {
     }
     /* Title */
     #title {
-        font-size: 3rem;
-        padding: 13% 0 0 0;
+        font-size: 2.5rem;
+        padding: 3% 0 0 0;
     }
     #eventInfo {
         padding-top: 1rem;

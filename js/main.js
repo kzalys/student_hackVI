@@ -25,6 +25,15 @@ var x = setInterval(function () {
 
 }, 1000);
 
+if ($(window).width() <= 768)
+    $('#logo').css('left', ($(window).width() - 80) / 2);
+
+$(window).resize(function () {
+    if ($(window).width() > 768)
+        return;
+    $('#logo').css('left', ($(window).width() - 80) / 2);
+})
+
 // Parallax
 
 $('body').scroll(function () {
@@ -33,10 +42,10 @@ $('body').scroll(function () {
 
 function parallax() {
     console.log("heelo");
-    
+
     if ($(document).width() <= 1024)
         return;
-        
+
     var wScroll = $('body').scrollTop();
 
     var fastDelta = 0.4;
@@ -52,7 +61,7 @@ function parallax() {
 
     var falconLeft = $('#falcon').css('left');
     var meteorLeft = $('#meteor').css('left');
-    
+
     $('#falcon').css('left', falconLeft - (wScroll * fastDelta / falconXRatio) + 'px');
     $('#meteor').css('left', meteorLeft - (wScroll * mediumDelta / meteorXRatio) + 'px');
     // $('#faq').css('background-position-y', '1000px');
