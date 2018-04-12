@@ -499,8 +499,8 @@ span {
     }
     /* FAQ Section */
     #faqTitle {
-        width: 16.5rem;
-        height: 4.5rem;
+        width: 12.833rem;
+        height: 3.5rem;
         margin: 0 auto 8rem auto;
     }
     #faqGrid {
@@ -509,8 +509,8 @@ span {
     /* Sponsors Section */
     #sponsorsTitle {
         top: 4rem;
-        width: 28.125rem;
-        height: 4.5rem;
+        width: 21.875rem;
+        height: 3.5rem;
         margin: 3rem auto 7rem auto;
     }
     #webApps {
@@ -518,17 +518,17 @@ span {
     }
     #githubLogo {
         display: block;
-        width: 17rem;
+        width: 13rem;
         left: 0;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
     }
     #bloomberg {
-        margin-top: 0.5rem;
-        width: 25rem;
+        margin-top: 0;
+        width: 18rem;
         left: 0;
-        top: -2rem;
+        top: -3rem;
     }
     #morganStanley {
-        width: 27rem;
+        width: 20rem;
     }
 }
