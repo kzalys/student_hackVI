@@ -68,8 +68,11 @@ section {
 }
 
 #hero>#content {
-    z-index: 1;
     grid-template-rows: repeat(3, 1fr);
+}
+
+#timer, #header {
+    z-index: 1;
 }
 
 #foreground {
