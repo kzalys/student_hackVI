@@ -178,7 +178,6 @@ section {
     top: -1px;
     height: auto;
     background-image: url('../img/faqBG.png');
-    background-position-y: top;
     background-size: cover;
     z-index: 100;
     padding-bottom: 1rem;
@@ -309,7 +308,7 @@ span {
     margin: 3.5rem auto;
 }
 
-#gold > header {
+#gold>header {
     color: #e8bc03;
 }
 
@@ -317,7 +316,7 @@ span {
     width: 40rem;
 }
 
-#silver > header {
+#silver>header {
     color: white;
 }
 
@@ -334,7 +333,7 @@ span {
     top: -0.3rem;
 }
 
-#bronze > header {
+#bronze>header {
     color: #cd7f32;
 }
 
@@ -347,7 +346,7 @@ span {
 #footer {
     padding-top: 3rem;
     display: block;
-    height: 8em;
+    height: 8rem;
 }
 
 #footerText {
@@ -362,15 +361,15 @@ span {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "f t g";
     align-items: center;
-    grid-gap: 2em;
+    grid-gap: 2rem;
     margin: 0 auto;
     height: 50%;
-    width: 10.5em;
+    width: 10.5rem;
 }
 
 .footerLogo {
-    height: 2em;
-    width: 2em;
+    height: 2rem;
+    width: 2rem;
     background-size: cover;
     background-color: transparent;
 }
@@ -381,8 +380,8 @@ span {
 }
 
 #twitter {
-    left: -0.25em;
-    width: 2.5em;
+    left: -0.25rem;
+    width: 2.5rem;
     grid-area: t;
     background-image: url("../img/twitterLogo.png");
 }
@@ -390,4 +389,145 @@ span {
 #github {
     grid-area: g;
     background-image: url("../img/githubLogo.png");
+}
+
+/* Tablet */
+
+@media(max-width: 1024px) {
+    /* Core */
+    #foreground {
+        z-index: 0;
+    }
+    /* Hero Section */
+    /* Timer */
+    #timer {
+        padding: 5% 10% 0 10%;
+        margin: 0;
+    }
+    /* Title */
+    #title {
+        font-size: 4rem;
+        padding: 5% 0 0 0;
+    }
+    #eventInfo {
+        font-size: 1.5rem;
+    }
+    #logo {
+        top: 2rem;
+        left: 2rem;
+        height: 5rem;
+        width: 5rem;
+    }
+    /* Sponsors Section */
+    #webApps {
+        width: 30rem;
+    }
+    
+    #githubLogo {
+        display: block;
+        width: 17rem;
+        left: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    #bloomberg {
+        margin-top: 0.5rem;
+        width: 25rem;
+        left: 0;
+        top: -2rem;
+    }
+    
+    #morganStanley {
+        width: 27rem;
+    }
+}
+
+/* Phone */
+
+@media(max-width: 768px) {
+    /* Core */
+    #logo {
+        position: absolute;
+        background-size: cover;
+        top: 43%;
+        left: 43%;
+        height: 5rem;
+        width: 5rem;
+    }
+    /* Hero section */
+    /* Redirect Buttons */
+    #ticketsBtn {
+        width: 8.89rem !important;
+        height: 6.0375rem !important;
+        top: 4rem !important;
+        left: 0;
+        margin: 0 auto;
+        background-image: url('../img/ticketsBtn.png');
+    }
+    .secondaryBtn {
+        width: 6.35rem;
+        height: 4.3125rem;
+        top: 3.4rem !important;
+    }
+    #volunteerBtn {
+        margin: 0 2rem 0 auto;
+    }
+    #mentorBtn {
+        margin: 0 auto 0 2rem;
+    }
+    /* Timer */
+    #timer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "d h" "d h" "m s" "m s";
+        padding: 2% 10% 0 10%;
+    }
+    .timerNumber {
+        font-size: 4.5rem;
+    }
+    .timerText {
+        font-size: 1rem;
+    }
+    /* Title */
+    #title {
+        font-size: 3rem;
+        padding: 13% 0 0 0;
+    }
+    #eventInfo {
+        padding-top: 1rem;
+        font-size: 1.3rem;
+    }
+    /* FAQ Section */
+    #faqTitle {
+        width: 16.5rem;
+        height: 4.5rem;
+        margin: 0 auto 8rem auto;
+    }
+    #faqGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Sponsors Section */
+    #sponsorsTitle {
+        top: 4rem;
+        width: 28.125rem;
+        height: 4.5rem;
+        margin: 3rem auto 7rem auto;
+    }
+    #webApps {
+        width: 20rem;
+    }
+    #githubLogo {
+        display: block;
+        width: 17rem;
+        left: 0;
+        margin-bottom: 0.5rem;
+    }
+    #bloomberg {
+        margin-top: 0.5rem;
+        width: 25rem;
+        left: 0;
+        top: -2rem;
+    }
+    #morganStanley {
+        width: 27rem;
+    }
 }

@@ -34,7 +34,7 @@ $('body').scroll(function () {
 function parallax() {
     console.log("heelo");
     
-    if ($(document).width() < 1024)
+    if ($(document).width() <= 1024)
         return;
         
     var wScroll = $('body').scrollTop();
