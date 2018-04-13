@@ -183,6 +183,10 @@ section {
     padding-bottom: 1rem;
 }
 
+#faqExplanation {
+    display: none;
+}
+
 #faqTitle {
     position: relative;
     background-image: url('../img/faqRibbon.png');
@@ -499,14 +503,19 @@ span {
         margin: 0 auto 8rem auto;
     }
     #faqGrid {
-        grid-template-columns: repeat(1, 1fr);
+        display: block;
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+    #faqExplanation {
+        font-family: Dodge;
+        display: block;    
     }
     /* Sponsors Section */
     #sponsorsTitle {
         top: 4rem;
         width: 21.875rem;
         height: 3.5rem;
-        margin: 3rem auto 7rem auto;
+        margin: 0 auto 7rem auto;
     }
     #webApps {
         width: 20rem;

@@ -29,12 +29,21 @@ if ($(window).width() <= 768)
 {
     $('#logo').css('left', ($(window).width() - 60) / 2);
     $('#logo').css('top', ($('#timer').height() - $('#logo').width()) / 2 + $('#timer').offset().top);
+    $('#faqGrid').slick({
+        autoplay: true,
+        autoplaySpeed: 9000
+    });
 }
+
 
 $(window).resize(function () {
     if ($(window).width() <= 768) {
         $('#logo').css('left', ($(window).width() - $('#logo').width()) / 2);
         $('#logo').css('top', ($('#timer').height() - $('#logo').width()) / 2 + $('#timer').offset().top);
+        $('#faqGrid').slick({
+            autoplay: true,
+            autoplaySpeed: 9000
+        });
     }
     else if ($(window).width() <= 1024) {
         $('#logo').css('left', '2rem');
@@ -43,6 +52,9 @@ $(window).resize(function () {
     else {
         $('#logo').css('left', '3rem');
         $('#logo').css('top', '3rem');
+    }
+    if ($(window).width() > 768) {
+        $('#faqGrid').slick("unslick");
     }
 })
 
@@ -53,8 +65,6 @@ $('body').scroll(function () {
 })
 
 function parallax() {
-    console.log("heelo");
-
     if ($(document).width() <= 1024)
         return;
 
