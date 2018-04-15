@@ -189,7 +189,7 @@ section {
 /* FAQ Section */
 
 #faq {
-    top: -1px;
+    top: -2px;
     height: auto;
     background-image: url('../img/faqBG.png');
     background-size: cover;
@@ -250,9 +250,10 @@ section {
 }
 
 .questionIcon {
+    margin: 30px auto;
     height: 120px;
+    width: 100%;
     color: white;
-    margin: auto;
     position: relative;
 }
 
