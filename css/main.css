@@ -35,7 +35,6 @@ section {
 }
 
 .fullscreen {
-    background-color: red;
     position: absolute;
     background-size: cover;
     background-position: 0 100%;
