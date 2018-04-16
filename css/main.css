@@ -509,6 +509,10 @@ span {
     #morganStanley {
         width: 27rem;
     }
+    /* Venue section */
+    #map {
+        width: 70%;
+    }
 }
 
 /* Phone */
@@ -620,6 +624,16 @@ span {
     #morganStanley {
         width: 20rem;
     }
+    /* Venue section */
+    #venueTitleContainer {
+        padding-top: 0;
+        width: 15.925rem;
+        height: 3.5rem;
+    }
+    #map {
+        width: 100%;
+        height: 30rem;
+    }
 }
 
 /* Small Phone */
@@ -643,6 +657,11 @@ span {
     /* Sponsors Section */
     #sponsorsTitle {
         width: 18.75rem;
+        height: 3rem;
+    }
+    /* Venue section */
+    #venueTitleContainer {
+        width: 13.65rem;
         height: 3rem;
     }
 }
