@@ -37,8 +37,7 @@ if ($(window).width() <= 768) {
 
 function initPhoneLayout() {
     $('#faqGridPhone').slick({
-        autoplay: true,
-        autoplaySpeed: 9000,
+        autoplay: false,
         infinite: false
     });
     setProgressBarWidth();
