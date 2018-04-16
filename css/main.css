@@ -227,6 +227,15 @@ section {
     display: none;
 }
 
+#slideshowProgressBar {
+    display: none;
+    position: relative;
+    top: -5px;
+    width: 100%;
+    height: 5px;
+    background-color: #13c3d2;
+}
+
 .faqQuestion {
     position: relative;
     bottom: 0;
@@ -369,8 +378,7 @@ span {
     background-repeat: no-repeat;
 }
 
-#venueTitleContainer
-{
+#venueTitleContainer {
     padding-top: 8rem;
     width: 27.3rem;
     height: 6rem;
@@ -578,6 +586,9 @@ span {
         display: none;
     }
     #faqGridPhone {
+        display: block;
+    }
+    #slideshowProgressBar {
         display: block;
     }
     #faqExplanation {
