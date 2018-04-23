@@ -31,6 +31,14 @@ var x = setInterval(function () {
 
 // Layout logic
 
+$(function(){
+    $('.faqQuestion').hover(function() {
+        $(this).css('box-shadow', '0 -10px 100px rgba(138, 138, 138, 0.3)');
+    }, function() {
+        $(this).css('box-shadow', 'none');
+    })
+  })
+  
 if ($(window).width() <= 768) {
     initPhoneLayout();
 }
